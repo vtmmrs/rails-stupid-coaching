@@ -53,20 +53,20 @@ body {
 .foreground {
   margin-top: auto;
   margin-bottom: 50px;
-  transform-origin: 0;
+  // transform-origin: 0;
   transform: translateZ(3px) scale(0.625);
 }
 
 .reply {
   background: $clear;
-  padding: 0px 24px 0px 16px;
+  padding: 8px 24px 8px 16px;
   font-style: italic;
-  border-radius: 5px;
+  border-radius: 8px;
   border-left: 8px solid $dgrey;
   box-shadow: 0px 4px 8px $shadow;
   // border: 1px solid $dgrey;
 }
 
-.reply h2 {
+.reply h4 {
   margin-top: 8px;
 }

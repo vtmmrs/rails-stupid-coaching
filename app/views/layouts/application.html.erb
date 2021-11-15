@@ -11,6 +11,24 @@
   </head>
 
   <body>
+  <%# <div class="container">
+  <div class="parallax-container">
     <%= yield %>
+  <%# </div> %>
+  </div>
+
+<div class="container">
+  <div class="parallax-container">
+    <div class="background">
+    <img class="background__image" src="https://source.unsplash.com/random" />
+    </div>
+    <div class="foreground">
+
+    <%= yield %>
+
+    </div>
+  </div>
+</div>
+
   </body>
 </html>

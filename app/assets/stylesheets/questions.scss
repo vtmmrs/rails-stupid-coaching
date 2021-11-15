@@ -1,0 +1,72 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// Defining a variable
+$gray: #F4F4F4;
+$white: #FFF;
+$clear: rgba(255, 255, 255, 0.65);
+$grey: #DDD;
+$dgrey: #555;
+$shadow: rgba(0, 0, 0, 0.2);
+
+body {
+  // background: $grey; // Using this variable
+  font-family: arial;
+  // background-image: url('https://source.unsplash.com/random');
+  // object-fit: cover;
+  // min-height: 400vh;
+  // background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-left: 24px;
+  // padding-top: 60px;
+  height: 100vh;
+  // perspective: 8px;
+  // perspective-origin: 50%;
+}
+
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 8px;
+  perspective-origin: 0%;
+  display: flex;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0px);
+}
+
+.foreground {
+  margin-top: auto;
+  margin-bottom: 50px;
+  transform-origin: 0;
+  transform: translateZ(3px) scale(0.625);
+}
+
+.reply {
+  background: $clear;
+  padding: 0px 24px 0px 16px;
+  font-style: italic;
+  border-radius: 5px;
+  border-left: 8px solid $dgrey;
+  box-shadow: 0px 4px 8px $shadow;
+  // border: 1px solid $dgrey;
+}
+
+.reply h2 {
+  margin-top: 8px;
+}
